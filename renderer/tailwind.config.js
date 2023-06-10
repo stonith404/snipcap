@@ -1,5 +1,4 @@
 
-import { color } from 'framer-motion';
 import colors from 'tailwindcss/colors';
 
 export const content = [

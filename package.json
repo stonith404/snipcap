@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "nextron",
     "build": "nextron build",
+    "lint": "cd renderer && next lint",
     "postinstall": "electron-builder install-app-deps"
   },
   "dependencies": {
@@ -18,7 +19,6 @@
     "appwrite": "^11.0.0",
     "electron-serve": "^1.1.0",
     "electron-store": "^8.1.0",
-    "framer-motion": "^10.12.16",
     "highlight.js": "^11.8.0",
     "react-focus-lock": "^2.9.4",
     "react-highlight": "^0.15.0",
@@ -36,6 +36,8 @@
     "autoprefixer": "^10.4.7",
     "electron": "^21.3.3",
     "electron-builder": "^23.6.0",
+    "eslint": "8.42.0",
+    "eslint-config-next": "13.4.4",
     "next": "^12.3.4",
     "nextron": "^8.5.0",
     "postcss": "^8.4.13",

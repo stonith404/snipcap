@@ -73,7 +73,7 @@ function ScrollList<T>({
   return (
     <div className="">
       {items.map((item, i) => (
-        <div ref={(el) => (itemsRef.current[i] = el)}>
+        <div key={i} ref={(el) => (itemsRef.current[i] = el)}>
           <div
             className={`p-1.5 ${i == cursor ? "bg-hover rounded-md" : ""}`}
             onClick={() => setSelected(item)}

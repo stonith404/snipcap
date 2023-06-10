@@ -9,14 +9,21 @@ type Props = {
 };
 
 export default function BottomBar({ actions, action }: Props) {
-  if (action) {
-    useKeyPress(action.shortcut.join("+"), action.action);
-  }
+  useKeyPress(action?.shortcut?.join("+") ?? "", action?.action, {
+    enabled: !!action,
+  });
+
   return (
     <>
       <div className="mt-14" />
       <div className="fixed bottom-0 pb-1 bg-black w-full border-t-[1px] border-border flex justify-between">
-        <img className="ml-5" src="/images/logo.svg" height={13} width={13} />
+        <img
+          className="ml-5"
+          src="/images/logo.svg"
+          height={13}
+          width={13}
+          alt="Logo"
+        />
         <div className="flex py-1 justify-end px-5 mt-1">
           {action ? (
             <div className="py-1 px-2 hover:bg-hover rounded-md">

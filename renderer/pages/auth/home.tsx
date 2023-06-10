@@ -23,7 +23,13 @@ export default function AuthHome() {
     <>
       <div className="pt-28 px-36">
         <div className="flex justify-center">
-          <img className="mb-3" src="/images/logo.svg" height={30} width={30} />
+          <img
+            className="mb-3"
+            src="/images/logo.svg"
+            height={30}
+            width={30}
+            alt="Logo"
+          />
         </div>
         <div className="text-center">
           <p className="text-2xl font-bold mb-2">Welcome to Snipcap</p>

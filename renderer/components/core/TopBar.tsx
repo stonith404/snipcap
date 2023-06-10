@@ -14,23 +14,22 @@ export default function TopBar({ backButton, title, children }: Props) {
   const router = useRouter();
   const actionMenu = useActionMenu();
 
-  if (backButton) {
-    useKeyPress("Escape", () => router.back(), {
-      enabled: !actionMenu.open,
-    });
-  }
+  useKeyPress("Escape", () => router.back(), {
+    enabled: !actionMenu.open && backButton,
+  });
 
   return (
     <div>
       <div className="mb-2 px-5 pt-4 flex gap-3">
         {backButton && (
           <KeyboardTip keys={["esc"]}>
-          <button
-            className="p-1 bg-neutral-800/50 rounded-md"
-            onClick={() => router.back()}
-          >
-            <TbArrowLeft className="h-5 w-5" />
-          </button></KeyboardTip>
+            <button
+              className="p-1 bg-neutral-800/50 rounded-md"
+              onClick={() => router.back()}
+            >
+              <TbArrowLeft className="h-5 w-5" />
+            </button>
+          </KeyboardTip>
         )}
         {title && <h1 className="text-lg ">{title}</h1>}
         {children && children}

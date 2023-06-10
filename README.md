@@ -1,38 +1,37 @@
-<p align="center"><img src="https://i.imgur.com/a9QWW0v.png"></p>
+# <div align="center"><img  src="renderer/public/images/logo.svg" width="30"/> </br>Snipcap</div>
 
-## Usage
+With Snipcap you have your code snippets on your fingertips, no need
+to leave your keyboard. A project built for the [Appwrite x Hashnode](https://hashnode.com/hackathons/appwrite) hackathon.
 
-### Create an App
+## Installation
 
-```
-# with npx
-$ npx create-nextron-app my-app --example with-tailwindcss
+1. Clone the repository
+   ```bash
+   git clone https://github.com/stonith404/snipcap
+   ```
+2. Install the dependencies
+   ```bash
+    cd snipcap
+    npm install
+   ```
+3. Build the project
+   ```bash
+    npm run build
+   ```
+4. Open the binary in the `dist` folder
 
-# with yarn
-$ yarn create nextron-app my-app --example with-tailwindcss
+## Development
 
-# with pnpx
-$ pnpx create-nextron-app my-app --example with-tailwindcss
-```
-
-### Install Dependencies
-
-```
-$ cd my-app
-
-# using yarn or npm
-$ yarn (or `npm install`)
-
-# using pnpm
-$ pnpm install --shamefully-hoist
-```
-
-### Use it
-
-```
-# development mode
-$ yarn dev (or `npm run dev` or `pnpm run dev`)
-
-# production build
-$ yarn build (or `npm run build` or `pnpm run build`)
-```
+1. Clone the repository
+   ```bash
+   git clone https://github.com/stonith404/snipcap
+   ```
+2. Install the dependencies
+   ```bash
+    cd snipcap
+    npm install
+   ```
+3. Start the development server
+   ```bash
+    npm run dev
+   ```

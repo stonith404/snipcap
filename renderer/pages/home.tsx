@@ -113,7 +113,7 @@ function Home() {
       </div>
       <hr className="my-3 h-[1px] border-t-0 bg-border" />
 
-      <div className="mx-5 overflow-auto h-[73vh]">
+      <div className="mx-5 overflow-auto h-[79vh]">
         {isLoading ? (
           <Loading />
         ) : snippets.length === 0 && !searchBar.searchQuery ? (

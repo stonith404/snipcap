@@ -5,7 +5,12 @@ import appwrite, { DATABASE } from "./appwrite.service";
 const COLLECTION = "646f0b1e996d8ae9b908";
 
 async function create(snippet: Snippet) {
-  await appwrite.database.createDocument(DATABASE, COLLECTION, ID.unique(), snippet);
+  await appwrite.database.createDocument(
+    DATABASE,
+    COLLECTION,
+    ID.unique(),
+    snippet
+  );
 }
 
 async function update(id: string, snippet: Snippet) {

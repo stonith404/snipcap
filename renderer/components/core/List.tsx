@@ -75,7 +75,7 @@ function ScrollList<T>({
       {items.map((item, i) => (
         <div key={i} ref={(el) => (itemsRef.current[i] = el)}>
           <div
-            className={`p-1.5 ${i == cursor ? "bg-hover rounded-md" : ""}`}
+            className={`px-1.5 py-2 ${i == cursor ? "bg-hover rounded-md" : ""}`}
             onClick={() => setSelected(item)}
           >
             {React.createElement(listItem, { item })}

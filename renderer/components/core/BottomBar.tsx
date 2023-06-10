@@ -15,7 +15,6 @@ export default function BottomBar({ actions, action }: Props) {
 
   return (
     <>
-      <div className="mt-14" />
       <div className="fixed bottom-0 pb-1 bg-black w-full border-t-[1px] border-border flex justify-between">
         <img
           className="ml-5"

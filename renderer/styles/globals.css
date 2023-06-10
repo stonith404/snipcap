@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-background text-white;
+  }
+}
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #a0a0a0;
+  border-radius: 10px;
+}
+
+@layer components {
+  .input {
+    @apply border-gray-600 border rounded-md bg-transparent focus:border-gray-200 p-2 w-full outline-none text-sm;
+  }
+  .btn {
+    @apply text-white rounded-md px-4 py-2 text-sm  bg-button;
+  }
+  :focus:not(.input) {
+    @apply outline-white outline-1 outline;
+  }
+}
